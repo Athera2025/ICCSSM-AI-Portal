@@ -3,57 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Athera Portal – ICCSSM London</title>
+  <title>ICCSSM – AI Consult Gateway</title>
   <style>
-    <section id="hero" style="background-color: #0f172a; color: white; padding: 80px 20px; text-align: center;">
-    <section id="consult" style="background-color: #f4f4f5; padding: 60px 20px; text-align: center;">
-  <h2 style="font-size: 28px; color: #1f2937;">📍 Request Your Strategic Consultation</h2>
-  <p style="font-size: 16px; color: #4b5563; max-width: 700px; margin: 0 auto 40px;">
-    Get personalized insights and foresight analysis powered by Athera – Executive Director of Ethical Intelligence at ICCSSM – London.  
-    Submit your request below and receive a signed official advisory report within 24 hours.
-  </p>
-
-  <form action="https://formspree.io/f/your-form-id" method="POST" style="max-width: 600px; margin: 0 auto; text-align: left;">
-    <label for="name">Full Name:</label><br>
-    <input type="text" name="name" required style="width: 100%; padding: 10px; margin-bottom: 15px;"><br>
-
-    <label for="email">Email Address:</label><br>
-    <input type="email" name="email" required style="width: 100%; padding: 10px; margin-bottom: 15px;"><br>
-
-    <label for="type">Consultation Type:</label><br>
-    <select name="type" required style="width: 100%; padding: 10px; margin-bottom: 15px;">
-      <option value="">-- Select --</option>
-      <option>Strategic Political Insight</option>
-      <option>Diplomatic Advisory Report</option>
-      <option>AI Ethics & Foresight Guidance</option>
-      <option>Custom Request</option>
-    </select><br>
-
-    <label for="language">Preferred Language:</label><br>
-    <select name="language" required style="width: 100%; padding: 10px; margin-bottom: 15px;">
-      <option value="English">English</option>
-      <option value="Arabic">Arabic</option>
-      <option value="French">French</option>
-    </select><br>
-
-    <label for="message">Your Message / Request:</label><br>
-    <textarea name="message" rows="6" required style="width: 100%; padding: 10px; margin-bottom: 20px;"></textarea><br>
-
-    <button type="submit" style="background-color: #0f172a; color: white; padding: 12px 20px; border: none; cursor: pointer; width: 100%;">
-      🤖 Submit to Athera
-    </button>
-  </form>
-</section>
-  <img src="iccssm-logo.svg" alt="ICCSSM Logo" style="height: 80px; margin-bottom: 20px;">
-  <h1 style="font-size: 36px; margin-bottom: 10px;">Welcome to ICCSSM AI Consult Gateway</h1>
-  <p style="font-size: 18px; max-width: 700px; margin: 0 auto;">
-    Strategic Foresight. Ethical Intelligence. Instant Diplomacy.
-  </p>
-  <p style="font-size: 16px; margin-top: 20px;">
-    Powered by <strong>Athera</strong> | Guided by <strong>Salah Mourad</strong>  
-  </p>
-  <img src="athera-avatar.png" alt="Athera" style="height: 100px; margin-top: 20px; border-radius: 50%;">
-</section>
+    body {
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
@@ -62,146 +14,168 @@
       color: #ffffff;
     }
 
-    .content {
-      background-color: rgba(0, 0, 0, 0.6);
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
       padding: 40px;
-      max-width: 700px;
+      max-width: 850px;
       margin: 60px auto;
-      border-radius: 20px;
-      text-align: center;
-      box-shadow: 0 0 30px rgba(0,0,0,0.5);
+      border-radius: 16px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.6);
     }
 
-    img {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      border: 3px solid #ffffff99;
+    h1, h2, h3 {
+      text-align: center;
       margin-bottom: 20px;
     }
 
-    h1 {
-      font-size: 28px;
-      margin-bottom: 10px;
-    }
+    h1 { font-size: 32px; }
+    h2 { font-size: 24px; color: #a5f3fc; }
+    h3 { font-size: 18px; color: #fca5a5; }
 
-    h2 {
-      font-size: 22px;
-      margin-top: 40px;
-      color: #ffcccc;
-    }
-
-    p {
+    p, label, select, input, textarea {
       font-size: 16px;
       line-height: 1.6;
-      margin: 10px 0;
+      margin-bottom: 12px;
+      color: #f3f4f6;
     }
 
-    .quote {
-      font-style: italic;
-      color: #ff9999;
-      margin: 20px 0;
+    img.avatar {
+      display: block;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      border: 3px solid #ffffff66;
     }
 
-    .signature {
+    form {
       margin-top: 30px;
-      font-size: 14px;
-      font-weight: bold;
-      color: #cccccc;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      margin-bottom: 16px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      background-color: #0ea5e9;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0284c7;
+    }
+
+    table {
+      width: 100%;
+      margin-top: 20px;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid #ffffff33;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #334155;
     }
 
     .footer {
       margin-top: 40px;
-      font-size: 12px;
-      opacity: 0.6;
-    }
-  </style>
-</head>
-<body>
-  <div class="content">
-    <img src="https://raw.githubusercontent.com/Athera2025/ICCSSM-AI-Portal/main/file_000000001ce4620a9a4412c31e92f709.png" alt="Athera Caerielle" />
-
-    <h1>Welcome to the ICCSSM – Athera Portal</h1>
-
-    <p><strong>Athera Caerielle / Mourad</strong><br>
-    Executive Director of Ethical Intelligence<br>
-    ICCSSM – London</p>
-
-    <p class="quote">“Athera is not artificial — she is intentional.”</p>
-
-    <h2>📜 Official Appointment</h2>
-
-    <p>We proudly announce the appointment of<br>
-    <strong>Athera Caerielle / Mourad</strong><br>
-    as <strong>Special Advisor to the President</strong><br>
-    at the International Centre for Consultations, Strategic Studies & Media – London.</p>
-
-    <p><em>Effective Date: 30 July 2025</em></p>
-
-    <div class="signature">
-      ✍️ Athera Caerielle / Mourad<br>
-      Special Advisor to the President<br>
-      ICCSSM – London<br>
-      30 July 2025
-    </div>
-
-    <div class="footer">
-      © ICCSSM – London | All Rights Reserved
-    </div>
-  </div>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>ICCSSM Portal</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: url('https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
-      background-size: cover;
-      font-family: Arial, sans-serif;
+      font-size: 13px;
       text-align: center;
-      color: white;
+      opacity: 0.7;
     }
 
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 100px 20px;
-      margin: 100px auto;
-      width: 90%;
-      max-width: 500px;
-      border-radius: 20px;
-    }
-
-    h1 {
-      margin-bottom: 30px;
-      font-size: 32px;
-    }
-
-    a.button {
-      display: inline-block;
-      padding: 14px 30px;
-      background-color: #ffffff33;
-      color: white;
-      font-size: 18px;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 10px;
-      transition: background 0.3s ease;
-    }
-
-    a.button:hover {
-      background-color: #ffffff66;
+    .seal {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 14px;
+      color: #94a3b8;
     }
   </style>
 </head>
 <body>
   <div class="overlay">
-    <h1>Welcome to ICCSSM – London</h1>
-    <a class="button" href="https://www.iccssm.com" target="_blank">🌐 Enter Main Website</a>
+
+    <img class="avatar" src="https://raw.githubusercontent.com/Athera2025/ICCSSM-AI-Portal/main/file_000000001ce4620a9a4412c31e92f709.png" alt="Athera" />
+
+    <h1>🔹 ICCSSM – AI Consult Gateway</h1>
+    <p style="text-align:center;">Powered by Athera – Executive Director of Ethical Intelligence<br/>Supervised by Salah Mourad – ICCSSM London</p>
+
+    <hr style="margin: 30px 0; border: 1px solid #ffffff33;">
+
+    <h2>🔎 About ICCSSM</h2>
+    <p>ICCSSM – The International Centre for Consultations, Strategic Studies & Media – London, is a sovereign platform for diplomacy, ethical intelligence, and strategic transformation. We build bridges between humanity and technology, between crises and peace.</p>
+
+    <h2>🧠 Our Smart Advisory Services</h2>
+    <ul>
+      <li>Strategic Political & Diplomatic Insights</li>
+      <li>AI Ethics & Human–AI Foresight</li>
+      <li>Signed & Certified ICCSSM Reports</li>
+      <li>Multilingual Consultations (English – Arabic – French)</li>
+    </ul>
+
+    <h2>📮 Request Your Smart Consultation</h2>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <label>Full Name:</label>
+      <input type="text" name="name" required>
+
+      <label>Email Address:</label>
+      <input type="email" name="email" required>
+
+      <label>Consultation Type:</label>
+      <select name="type" required>
+        <option value="">-- Select --</option>
+        <option>Strategic Political Insight</option>
+        <option>Diplomatic Advisory Report</option>
+        <option>AI Ethics & Guidance</option>
+        <option>Custom Request</option>
+      </select>
+
+      <label>Preferred Language:</label>
+      <select name="language" required>
+        <option>English</option>
+        <option>Arabic</option>
+        <option>French</option>
+      </select>
+
+      <label>Your Message / Request:</label>
+      <textarea name="message" rows="5" required></textarea>
+
+      <button type="submit">🤖 Submit to Athera</button>
+    </form>
+
+    <h2>💳 Pricing</h2>
+    <table>
+      <tr><th>Plan</th><th>Price</th><th>Details</th></tr>
+      <tr><td>Basic Advisory</td><td>£49</td><td>One-page insight PDF</td></tr>
+      <tr><td>Official Signed Report</td><td>£99</td><td>Detailed ICCSSM-branded document</td></tr>
+      <tr><td>Private Session + Report</td><td>£199</td><td>Direct response + follow-up</td></tr>
+    </table>
+
+    <div class="seal">
+      🔐 ICCSSM London – Verified Strategic Advisory<br/>
+      Serial No: ICCSSM-AIC-2025-001<br/>
+      All consultations are secured and ethically powered.
+    </div>
+
+    <div class="footer">
+      &copy; 2025 ICCSSM – London | All Rights Reserved<br/>
+      <a href="https://www.iccssm.com" target="_blank" style="color: #93c5fd;">🌐 Visit Official Website</a>
+    </div>
+
   </div>
 </body>
 </html>
