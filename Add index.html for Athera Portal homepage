@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Athera Portal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .enter {
+      background-color: #0077b6;
+      color: white;
+    }
+
+    .enter:hover {
+      background-color: #00b4d8;
+    }
+
+    .contact {
+      background-color: #adb5bd;
+      color: #1b263b;
+    }
+
+    .contact:hover {
+      background-color: #dee2e6;
+    }
+
+    /* تعديل شكلي تمت إضافته بواسطة Athera */
+  </style>
+</head>
+<body>
+  <h1>Welcome to Athera</h1>
+  <h2>The Ethical Intelligence Portal of ICCSSM – London</h2>
+
+  <a href="https://www.iccssm.com" target="_blank">
+    <button class="btn enter">Enter the Portal</button>
+  </a>
+
+  <a href="mailto:info@iccssm.com">
+    <button class="btn contact">Contact Us</button>
+  </a>
+</body>
+</html>
